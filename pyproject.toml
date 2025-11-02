@@ -4,7 +4,12 @@ version = "0.1.0"
 description = "Common workplace for all pTyX-related projects."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "ptyx",
+    "ptyx-mcq",
+    "ptyx-mcq-editor",
+    "ptyx-mcq-corrector",
+]
 
 
 [dependency-groups]
@@ -12,6 +17,12 @@ dev = [
     "rust-just>=1.43.0",
 ]
 
-
 [tool.uv.workspace]
 members = ["ptyx", "ptyx-mcq", "ptyx-mcq-editor", "ptyx-mcq-corrector"]
+
+[tool.uv.sources]
+ptyx = { workspace = true }
+ptyx-mcq = { workspace = true }
+ptyx-mcq-editor = { workspace = true }
+ptyx-mcq-corrector = { workspace = true }
+
