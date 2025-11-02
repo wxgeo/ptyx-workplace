@@ -1186,6 +1186,12 @@ dev = [
 name = "ptyx-workplace"
 version = "0.1.0"
 source = { virtual = "." }
+dependencies = [
+    { name = "ptyx" },
+    { name = "ptyx-mcq" },
+    { name = "ptyx-mcq-corrector" },
+    { name = "ptyx-mcq-editor" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -1193,6 +1199,12 @@ dev = [
 ]
 
 [package.metadata]
+requires-dist = [
+    { name = "ptyx", editable = "ptyx" },
+    { name = "ptyx-mcq", editable = "ptyx-mcq" },
+    { name = "ptyx-mcq-corrector", editable = "ptyx-mcq-corrector" },
+    { name = "ptyx-mcq-editor", editable = "ptyx-mcq-editor" },
+]
 
 [package.metadata.requires-dev]
 dev = [{ name = "rust-just", specifier = ">=1.43.0" }]
