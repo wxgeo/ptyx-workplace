@@ -4,8 +4,13 @@ uv := "env -u VIRTUAL_ENV uv"
 
 default:
     just --list
-    
-    
+
+install:
+    ( cd ptyx; uv tool install --editable . )
+    ( cd ptyx-mcq; uv tool install --editable . )  
+    ( cd ptyx-mcq-editor; uv tool install --editable . )
+    ( cd ptyx-mcq-corrector; uv tool install --editable . )
+        
 clone:
     git clone git@github.com:wxgeo/ptyx.git
     git clone git@github.com:wxgeo/ptyx-mcq.git
