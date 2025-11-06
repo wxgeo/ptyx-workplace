@@ -8,8 +8,11 @@ default:
 install:
     ( cd ptyx; uv tool install --editable . )
     ( cd ptyx-mcq; uv tool install --editable . )  
-    ( cd ptyx-mcq-editor; uv tool install --editable . )
+    ( cd ptyx-mcq-editor; uv tool install  --with-executables-from ruff --editable . )
     ( cd ptyx-mcq-corrector; uv tool install --editable . )
+
+full-install: install
+    mcq install shell-completion
         
 clone:
     git clone git@github.com:wxgeo/ptyx.git
