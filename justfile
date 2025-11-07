@@ -13,6 +13,7 @@ install:
 
 full-install: install
     mcq install shell-completion
+    mcq-editor --install-shortcuts
         
 clone:
     git clone git@github.com:wxgeo/ptyx.git
