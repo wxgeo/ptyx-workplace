@@ -1031,7 +1031,7 @@ dev = [
 
 [[package]]
 name = "ptyx-mcq"
-version = "31.0.0"
+version = "31.0.1"
 source = { editable = "ptyx-mcq" }
 dependencies = [
     { name = "argcomplete" },
