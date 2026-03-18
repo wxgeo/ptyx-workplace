@@ -11,6 +11,7 @@ push project:
     @cd {{project}} && git push --tags
 
 push-all:
+    just push .
     for p in {{projects}}; do just push $p; done
 
 status:
