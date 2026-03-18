@@ -863,7 +863,7 @@ requires-dist = [
     { name = "platformdirs", specifier = ">=4,<5" },
     { name = "ptyx", editable = "ptyx" },
     { name = "pymupdf", specifier = ">=1.25.1,<2" },
-    { name = "smallgraphlib", specifier = ">=1.0.0" },
+    { name = "smallgraphlib", specifier = ">=1.1.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -1477,11 +1477,11 @@ wheels = [
 
 [[package]]
 name = "smallgraphlib"
-version = "1.0.0"
+version = "1.1.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a4/5f/647e9b8968884a16634b6f65b3ba00db16bb245cb93cf77f2d50a7e0124c/smallgraphlib-1.0.0.tar.gz", hash = "sha256:140496636c2c6e912cbda264b7e5074f650d3c5870adab975d7a1980f6b80b14", size = 43184, upload-time = "2025-02-20T16:16:44.184Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b0/bc/9f24562ebf9913b033fb8e66b5f6c109dac6dec516382c26acad53665e09/smallgraphlib-1.1.1.tar.gz", hash = "sha256:24f35903519fb65c3aabb7a00409f5aafd97ea7caf8b0c9fcf6589add4f381cf", size = 42683, upload-time = "2026-03-14T23:31:16.774Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/49/ad/a024ccbcde8ad96b38111622a418b1e6878a23411755a4d12e67fab7c6be/smallgraphlib-1.0.0-py3-none-any.whl", hash = "sha256:c477ae36c9d344bfc433bcc21c616d99805d0f02f0a4551c1cdc226cbee2951f", size = 49199, upload-time = "2025-02-20T16:16:42.771Z" },
+    { url = "https://files.pythonhosted.org/packages/15/59/d301bc90936561a46edca7ef1ed2e7fe2592a83659455e72c4a646eb07be/smallgraphlib-1.1.1-py3-none-any.whl", hash = "sha256:84d88cd665e7949d586a768678048ffed19d90e54d5d295ba78ca70927f00836", size = 50489, upload-time = "2026-03-14T23:31:18.003Z" },
 ]
 
 [[package]]
