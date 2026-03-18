@@ -1,0 +1,3 @@
+
+sync:
+   {{uv}} run sync
