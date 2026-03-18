@@ -16,8 +16,10 @@ push-all:
 
 _status dir:
     @output=$(cd "{{dir}}" && git -c color.status=always status -s); \
-     if [ -z "$output" ]; then echo -e "\n\e[1;97;44m {{dir}} \e[0m \e[32m✔\e[0m"; \
-     else echo -e "\n\e[1;97;44m {{dir}} \e[0m\n$output"; fi
+     ahead=$(cd "{{dir}}" && git rev-list --count @{u}..HEAD 2>/dev/null || echo 0); \
+     ahead_str=$([ "$ahead" -gt 0 ] && echo -e " \e[1;34m(+$ahead)\e[0m" || echo ""); \
+     if [ -z "$output" ]; then echo -e "\n\e[1;97;44m {{dir}} \e[0m$ahead_str \e[32m✔\e[0m"; \
+     else echo -e "\n\e[1;97;44m {{dir}} \e[0m$ahead_str\n$output"; fi
      
 all:
     @just _status .
@@ -26,5 +28,9 @@ all:
     @just _status ptyx-mcq-editor
     @just _status ptyx-mcq-corrector
 
-git-lock:
+commit-lock:
     git commit uv.lock -m "dev: update uv.lock"
+
+commit-all message:
+    @git commit -a -m "{{message}}"
+    @for p in {{projects}}; do cd "$p" && git commit -a -m "{{message}}" && cd ..; done

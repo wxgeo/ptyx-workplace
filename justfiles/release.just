@@ -1,5 +1,4 @@
 doc project:
-    @cd {{project}} && {{uv}} run make -C doc autodoc
     @cd {{project}} && {{uv}} run make -C doc html
 
 _check-clean project:

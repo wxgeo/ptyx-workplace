@@ -4,6 +4,7 @@ import "justfiles/install.just"
 import "justfiles/quality.just"
 import "justfiles/release.just"
 import "justfiles/uv.just"
+import "justfiles/ui.just"
 
 default:
     just --list
