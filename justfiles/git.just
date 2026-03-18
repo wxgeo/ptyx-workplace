@@ -14,18 +14,17 @@ push-all:
     just push .
     for p in {{projects}}; do just push $p; done
 
-status:
-    @echo -e "\n\e[1;97;44m ptyx-workplace \e[0m"
-    @git status
-    @echo -e "\n\e[1;97;44m ptyx \e[0m"
-    @( cd ptyx; git status )
-    @echo -e "\n\e[1;97;44m ptyx-mcq \e[0m"
-    @( cd ptyx-mcq; git status )
-    @echo -e "\n\e[1;97;44m ptyx-mcq-editor \e[0m"
-    @( cd ptyx-mcq-editor; git status )
-    @echo -e "\n\e[1;97;44m ptyx-mcq-corrector \e[0m"
-    @( cd ptyx-mcq-corrector; git status )
-
+_status dir:
+    @output=$(cd "{{dir}}" && git -c color.status=always status -s); \
+     if [ -z "$output" ]; then echo -e "\n\e[1;97;44m {{dir}} \e[0m \e[32m✔\e[0m"; \
+     else echo -e "\n\e[1;97;44m {{dir}} \e[0m\n$output"; fi
+     
+all:
+    @just _status .
+    @just _status ptyx
+    @just _status ptyx-mcq
+    @just _status ptyx-mcq-editor
+    @just _status ptyx-mcq-corrector
 
 git-lock:
     git commit uv.lock -m "dev: update uv.lock"
