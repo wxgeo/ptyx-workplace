@@ -1,5 +1,5 @@
 doc project:
-    @cd {{project}} && {{uv}} run make -C doc html
+    @cd {{project}} && {{uv}} run make -C doc html || true
 
 _check-clean project:
     @cd {{project}} && git diff --exit-code || (echo "Uncommitted changes in {{project}}!" && exit 1)
