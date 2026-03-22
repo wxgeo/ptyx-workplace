@@ -8,9 +8,7 @@ _check-clean project:
 _check-branch project branch="main":
     @cd {{project}} && git rev-parse --abbrev-ref HEAD | grep -qx {{branch}} || (echo "\e[1;97;43m[Warning]\e[0m {{project}} is not on {{branch}} branch!" && exit 1)
 
-build project: (_check-clean project) (_check-branch project)
+release project: (_check-clean project) (_check-branch project) (test project) (doc project)
     rm -rf dist/
-    uv build --package {{project}}
-
-release project: (_check-clean project) (_check-branch project) (test project) (doc project) (build project)
+    @cd {{project}} && {{uv}} run semantic-release version
     uv publish
