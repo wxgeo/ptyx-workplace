@@ -17,7 +17,7 @@ test-all:
     done
 
 fix project:
-    @cd {{project}} && {{uv}} run black src tests
+    @cd {{project}} && {{uv}} run ruff format src tests
     @cd {{project}} && {{uv}} run ruff check --fix src tests
 
 fix-all:
