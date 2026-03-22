@@ -45,5 +45,7 @@ commit-lock:
     git commit uv.lock -m "dev: update uv.lock"
 
 commit-all message:
-    @git commit -a -m "{{message}}"
-    @for p in {{projects}}; do cd "$p" && git commit -a -m "{{message}}" && cd ..; done
+    @git diff-index --quiet HEAD || git commit -a -m "{{message}}"
+    @for p in {{projects}}; do \
+        cd "$p" && git diff-index --quiet HEAD || git commit -a -m "{{message}}" && cd ..; \
+    done
