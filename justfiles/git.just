@@ -14,6 +14,19 @@ push-all:
     just push .
     for p in {{projects}}; do just push $p; done
 
+diff project:
+    @cd {{project}} && git diff
+
+diff-all:
+    @{ \
+        echo -e "\n\e[1;97;44m . \e[0m"; \
+        git -c color.diff=always --no-pager diff; \
+        for p in {{projects}}; do \
+            echo -e "\n\e[1;97;44m $p \e[0m"; \
+            cd "$p" && git -c color.diff=always --no-pager diff && cd ..; \
+        done; \
+    } | less -R
+
 _status dir:
     @output=$(cd "{{dir}}" && git -c color.status=always status -s); \
      ahead=$(cd "{{dir}}" && git rev-list --count @{u}..HEAD 2>/dev/null || echo 0); \
