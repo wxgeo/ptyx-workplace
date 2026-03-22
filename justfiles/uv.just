@@ -1,3 +1,3 @@
 
 sync:
-   {{uv}} run sync
+   {{uv}} sync --all-packages

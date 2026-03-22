@@ -11,9 +11,10 @@ pytest project:
 test project: (ruff project) (mypy project) (pytest project)
 
 test-all:
-    for p in {{projects}}; do just test $p; done
-
-
+    @for p in {{projects}}; do \
+        echo -e "\n\e[1;97;44m $p \e[0m"; \
+        just test $p; \
+    done
 
 fix project:
     @cd {{project}} && {{uv}} run black src tests

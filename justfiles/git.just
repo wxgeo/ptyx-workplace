@@ -21,7 +21,7 @@ _status dir:
      if [ -z "$output" ]; then echo -e "\n\e[1;97;44m {{dir}} \e[0m$ahead_str \e[32m✔\e[0m"; \
      else echo -e "\n\e[1;97;44m {{dir}} \e[0m$ahead_str\n$output"; fi
      
-all:
+see:
     @just _status .
     @just _status ptyx
     @just _status ptyx-mcq
