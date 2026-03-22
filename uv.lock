@@ -76,30 +76,12 @@ wheels = [
 ]
 
 [[package]]
-name = "cachetools"
-version = "6.2.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/fb/44/ca1675be2a83aeee1886ab745b28cda92093066590233cc501890eb8417a/cachetools-6.2.2.tar.gz", hash = "sha256:8e6d266b25e539df852251cfd6f990b4bc3a141db73b939058d809ebd2590fc6", size = 31571, upload-time = "2025-11-13T17:42:51.465Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/e6/46/eb6eca305c77a4489affe1c5d8f4cae82f285d9addd8de4ec084a7184221/cachetools-6.2.2-py3-none-any.whl", hash = "sha256:6c09c98183bf58560c97b2abfcedcbaf6a896a490f534b031b661d3723b45ace", size = 11503, upload-time = "2025-11-13T17:42:50.232Z" },
-]
-
-[[package]]
 name = "certifi"
 version = "2025.11.12"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/a2/8c/58f469717fa48465e4a50c014a0400602d3c437d7c0c468e17ada824da3a/certifi-2025.11.12.tar.gz", hash = "sha256:d8ab5478f2ecd78af242878415affce761ca6bc54a22a27e026d7c25357c3316", size = 160538, upload-time = "2025-11-12T02:54:51.517Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/70/7d/9bc192684cea499815ff478dfcdc13835ddf401365057044fb721ec6bddb/certifi-2025.11.12-py3-none-any.whl", hash = "sha256:97de8790030bbd5c2d96b7ec782fc2f7820ef8dba6db909ccf95449f2d062d4b", size = 159438, upload-time = "2025-11-12T02:54:49.735Z" },
-]
-
-[[package]]
-name = "chardet"
-version = "5.2.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f3/0d/f7b6ab21ec75897ed80c17d79b15951a719226b9fababf1e40ea74d69079/chardet-5.2.0.tar.gz", hash = "sha256:1b3b6ff479a8c414bc3fa2c0852995695c4a026dcd6d0633b2dd092ca39c1cf7", size = 2069618, upload-time = "2023-08-01T19:23:02.662Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/38/6f/f5fbc992a329ee4e0f288c1fe0e2ad9485ed064cac731ed2fe47dcc38cbf/chardet-5.2.0-py3-none-any.whl", hash = "sha256:e1cf59446890a00105fe7b7912492ea04b6e6f06d4b742b2c788469e34c82970", size = 199385, upload-time = "2023-08-01T19:23:00.661Z" },
 ]
 
 [[package]]
@@ -221,15 +203,6 @@ wheels = [
 ]
 
 [[package]]
-name = "distlib"
-version = "0.4.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/96/8e/709914eb2b5749865801041647dc7f4e6d00b549cfe88b65ca192995f07c/distlib-0.4.0.tar.gz", hash = "sha256:feec40075be03a04501a973d81f633735b4b69f98b05450592310c0f401a4e0d", size = 614605, upload-time = "2025-07-17T16:52:00.465Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/33/6b/e0547afaf41bf2c42e52430072fa5658766e3d65bd4b03a563d1b6336f57/distlib-0.4.0-py2.py3-none-any.whl", hash = "sha256:9659f7d87e46584a30b5780e43ac7a2143098441670ff0a49d5f9034c54a6c16", size = 469047, upload-time = "2025-07-17T16:51:58.613Z" },
-]
-
-[[package]]
 name = "docutils"
 version = "0.18.1"
 source = { registry = "https://pypi.org/simple" }
@@ -263,15 +236,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/bf/89/780e11f9588d9e7128a3f87788354c7946a9cbb1401ad38a48c4db9a4f07/execnet-2.1.2.tar.gz", hash = "sha256:63d83bfdd9a23e35b9c6a3261412324f964c2ec8dcd8d3c6916ee9373e0befcd", size = 166622, upload-time = "2025-11-12T09:56:37.75Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ab/84/02fc1827e8cdded4aa65baef11296a9bbe595c474f0d6d758af082d849fd/execnet-2.1.2-py3-none-any.whl", hash = "sha256:67fba928dd5a544b783f6056f449e5e3931a5c378b128bc18501f7ea79e296ec", size = 40708, upload-time = "2025-11-12T09:56:36.333Z" },
-]
-
-[[package]]
-name = "filelock"
-version = "3.20.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/58/46/0028a82567109b5ef6e4d2a1f04a583fb513e6cf9527fcdd09afd817deeb/filelock-3.20.0.tar.gz", hash = "sha256:711e943b4ec6be42e1d4e6690b48dc175c822967466bb31c0c293f34334c13f4", size = 18922, upload-time = "2025-10-08T18:03:50.056Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/76/91/7216b27286936c16f5b4d0c530087e4a54eead683e6b0b73dd0c64844af6/filelock-3.20.0-py3-none-any.whl", hash = "sha256:339b4732ffda5cd79b13f4e2711a31b0365ce445d95d243bb996273d072546a2", size = 16054, upload-time = "2025-10-08T18:03:48.35Z" },
 ]
 
 [[package]]
@@ -788,19 +752,6 @@ dependencies = [
     { name = "sympy" },
 ]
 
-[package.dev-dependencies]
-dev = [
-    { name = "black" },
-    { name = "mypy" },
-    { name = "myst-parser" },
-    { name = "pytest" },
-    { name = "python-semantic-release" },
-    { name = "ruff" },
-    { name = "rust-just" },
-    { name = "sphinx-autodoc-typehints" },
-    { name = "sphinx-rtd-theme" },
-]
-
 [package.metadata]
 requires-dist = [
     { name = "numpy", specifier = ">=2.1.3,<3" },
@@ -810,17 +761,7 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [
-    { name = "black", specifier = ">=24.10.0,<25" },
-    { name = "mypy", specifier = ">=1.0.1,<2" },
-    { name = "myst-parser", specifier = ">=1.0,<2" },
-    { name = "pytest", specifier = ">=7.2.1,<8" },
-    { name = "python-semantic-release", specifier = ">=10" },
-    { name = "ruff", specifier = ">=0.9.1,<0.10" },
-    { name = "rust-just", specifier = ">=1.43.0" },
-    { name = "sphinx-autodoc-typehints", specifier = ">=1.19.5,<2" },
-    { name = "sphinx-rtd-theme", specifier = ">=1.0.0,<2" },
-]
+dev = []
 
 [[package]]
 name = "ptyx-mcq"
@@ -838,19 +779,11 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-    { name = "black" },
-    { name = "mypy" },
     { name = "myst-parser" },
-    { name = "ptyx" },
-    { name = "pytest" },
     { name = "pytest-profiling" },
     { name = "pytest-xdist" },
-    { name = "python-semantic-release" },
-    { name = "ruff" },
-    { name = "rust-just" },
     { name = "sphinx-autodoc-typehints" },
     { name = "sphinx-rtd-theme" },
-    { name = "tox" },
     { name = "types-openpyxl" },
     { name = "types-pillow" },
 ]
@@ -868,21 +801,13 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "black", specifier = ">=24.10.0,<25" },
-    { name = "mypy", specifier = "~=1.0" },
     { name = "myst-parser", specifier = ">=1.0.0,<2" },
-    { name = "ptyx", editable = "ptyx" },
-    { name = "pytest", specifier = ">=7,<8" },
     { name = "pytest-profiling", specifier = ">=1.8.1,<2" },
     { name = "pytest-xdist", specifier = ">=3.5.0,<4" },
-    { name = "python-semantic-release", specifier = ">=10" },
-    { name = "ruff", specifier = ">=0.9.1,<0.10" },
-    { name = "rust-just", specifier = ">=1.43.0" },
     { name = "sphinx-autodoc-typehints", specifier = ">=1.18.3,<2" },
     { name = "sphinx-rtd-theme", specifier = ">=1.0.0,<2" },
-    { name = "tox", specifier = "~=4.14" },
-    { name = "types-openpyxl", specifier = ">=3.1.0.12,<4" },
-    { name = "types-pillow", specifier = ">=9.0.20,<10" },
+    { name = "types-openpyxl" },
+    { name = "types-pillow" },
 ]
 
 [[package]]
@@ -897,18 +822,6 @@ dependencies = [
     { name = "tomli-w" },
 ]
 
-[package.dev-dependencies]
-dev = [
-    { name = "black" },
-    { name = "mypy" },
-    { name = "ptyx" },
-    { name = "ptyx-mcq" },
-    { name = "pytest" },
-    { name = "python-semantic-release" },
-    { name = "ruff" },
-    { name = "rust-just" },
-]
-
 [package.metadata]
 requires-dist = [
     { name = "argcomplete", specifier = ">=3.1.6,<4" },
@@ -919,16 +832,7 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [
-    { name = "black", specifier = ">=24.10.0,<25" },
-    { name = "mypy", specifier = ">=1.6.1,<2" },
-    { name = "ptyx", editable = "ptyx" },
-    { name = "ptyx-mcq", editable = "ptyx-mcq" },
-    { name = "pytest", specifier = "~=7.4" },
-    { name = "python-semantic-release", specifier = ">=10" },
-    { name = "ruff", specifier = ">=0.9.1,<0.10" },
-    { name = "rust-just", specifier = ">=1.43.0" },
-]
+dev = []
 
 [[package]]
 name = "ptyx-mcq-editor"
@@ -944,14 +848,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-    { name = "black" },
-    { name = "mypy" },
-    { name = "ptyx" },
-    { name = "ptyx-mcq" },
     { name = "pyqt6-stubs" },
-    { name = "pytest" },
-    { name = "python-semantic-release" },
-    { name = "rust-just" },
     { name = "types-psutil" },
 ]
 
@@ -966,15 +863,8 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "black", specifier = ">=24" },
-    { name = "mypy", specifier = ">=1.6.1,<2" },
-    { name = "ptyx", editable = "ptyx" },
-    { name = "ptyx-mcq", editable = "ptyx-mcq" },
-    { name = "pyqt6-stubs", specifier = ">=20250824" },
-    { name = "pytest", specifier = ">=7.4.3" },
-    { name = "python-semantic-release", specifier = ">=10" },
-    { name = "rust-just", specifier = ">=1.43.0" },
-    { name = "types-psutil", specifier = ">=7.0.0.20250218,<8" },
+    { name = "pyqt6-stubs" },
+    { name = "types-psutil" },
 ]
 
 [[package]]
@@ -990,7 +880,15 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "black" },
+    { name = "mypy" },
+    { name = "myst-parser" },
+    { name = "pytest" },
+    { name = "python-semantic-release" },
+    { name = "ruff" },
     { name = "rust-just" },
+    { name = "sphinx-autodoc-typehints" },
+    { name = "sphinx-rtd-theme" },
 ]
 
 [package.metadata]
@@ -1002,7 +900,17 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "rust-just", specifier = ">=1.43.0" }]
+dev = [
+    { name = "black", specifier = ">=24.10.0" },
+    { name = "mypy", specifier = ">=1.18.2" },
+    { name = "myst-parser", specifier = ">=1.0,<2" },
+    { name = "pytest", specifier = ">=7.4.4" },
+    { name = "python-semantic-release", specifier = ">=10.5.3" },
+    { name = "ruff", specifier = ">=0.9.10" },
+    { name = "rust-just", specifier = ">=1.43.0" },
+    { name = "sphinx-autodoc-typehints", specifier = ">=1.19.5,<2" },
+    { name = "sphinx-rtd-theme", specifier = ">=1.0.0,<2" },
+]
 
 [[package]]
 name = "pydantic"
@@ -1137,18 +1045,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/4f/bf/6e02e3d84b32c137c71a0a3dcdba8f2f6e9950619a3bc272245c7c06a051/pymupdf-1.26.6-cp310-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:7777d0b7124c2ebc94849536b6a1fb85d158df3b9d873935e63036559391534c", size = 24115381, upload-time = "2025-11-05T14:33:54.338Z" },
     { url = "https://files.pythonhosted.org/packages/ab/9d/30f7fcb3776bfedde66c06297960debe4883b1667294a1ee9426c942e94d/pymupdf-1.26.6-cp310-abi3-win32.whl", hash = "sha256:8f3ef05befc90ca6bb0f12983200a7048d5bff3e1c1edef1bb3de60b32cb5274", size = 17203613, upload-time = "2025-11-05T17:19:47.494Z" },
     { url = "https://files.pythonhosted.org/packages/f9/e8/989f4eaa369c7166dc24f0eaa3023f13788c40ff1b96701f7047421554a8/pymupdf-1.26.6-cp310-abi3-win_amd64.whl", hash = "sha256:ce02ca96ed0d1acfd00331a4d41a34c98584d034155b06fd4ec0f051718de7ba", size = 18405680, upload-time = "2025-11-05T14:34:48.672Z" },
-]
-
-[[package]]
-name = "pyproject-api"
-version = "1.10.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "packaging" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/45/7b/c0e1333b61d41c69e59e5366e727b18c4992688caf0de1be10b3e5265f6b/pyproject_api-1.10.0.tar.gz", hash = "sha256:40c6f2d82eebdc4afee61c773ed208c04c19db4c4a60d97f8d7be3ebc0bbb330", size = 22785, upload-time = "2025-10-09T19:12:27.21Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/54/cc/cecf97be298bee2b2a37dd360618c819a2a7fd95251d8e480c1f0eb88f3b/pyproject_api-1.10.0-py3-none-any.whl", hash = "sha256:8757c41a79c0f4ab71b99abed52b97ecf66bd20b04fa59da43b5840bac105a09", size = 13218, upload-time = "2025-10-09T19:12:24.428Z" },
 ]
 
 [[package]]
@@ -1652,26 +1548,6 @@ wheels = [
 ]
 
 [[package]]
-name = "tox"
-version = "4.32.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "cachetools" },
-    { name = "chardet" },
-    { name = "colorama" },
-    { name = "filelock" },
-    { name = "packaging" },
-    { name = "platformdirs" },
-    { name = "pluggy" },
-    { name = "pyproject-api" },
-    { name = "virtualenv" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/59/bf/0e4dbd42724cbae25959f0e34c95d0c730df03ab03f54d52accd9abfc614/tox-4.32.0.tar.gz", hash = "sha256:1ad476b5f4d3679455b89a992849ffc3367560bbc7e9495ee8a3963542e7c8ff", size = 203330, upload-time = "2025-10-24T18:03:38.132Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/fc/cc/e09c0d663a004945f82beecd4f147053567910479314e8d01ba71e5d5dea/tox-4.32.0-py3-none-any.whl", hash = "sha256:451e81dc02ba8d1ed20efd52ee409641ae4b5d5830e008af10fe8823ef1bd551", size = 175905, upload-time = "2025-10-24T18:03:36.337Z" },
-]
-
-[[package]]
 name = "types-openpyxl"
 version = "3.1.5.20250919"
 source = { registry = "https://pypi.org/simple" }
@@ -1726,20 +1602,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/15/22/9ee70a2574a4f4599c47dd506532914ce044817c7752a79b6a51286319bc/urllib3-2.5.0.tar.gz", hash = "sha256:3fc47733c7e419d4bc3f6b3dc2b4f890bb743906a30d56ba4a5bfa4bbff92760", size = 393185, upload-time = "2025-06-18T14:07:41.644Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a7/c2/fe1e52489ae3122415c51f387e221dd0773709bad6c6cdaa599e8a2c5185/urllib3-2.5.0-py3-none-any.whl", hash = "sha256:e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc", size = 129795, upload-time = "2025-06-18T14:07:40.39Z" },
-]
-
-[[package]]
-name = "virtualenv"
-version = "20.35.4"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "distlib" },
-    { name = "filelock" },
-    { name = "platformdirs" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/20/28/e6f1a6f655d620846bd9df527390ecc26b3805a0c5989048c210e22c5ca9/virtualenv-20.35.4.tar.gz", hash = "sha256:643d3914d73d3eeb0c552cbb12d7e82adf0e504dbf86a3182f8771a153a1971c", size = 6028799, upload-time = "2025-10-29T06:57:40.511Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/79/0c/c05523fa3181fdf0c9c52a6ba91a23fbf3246cc095f26f6516f9c60e6771/virtualenv-20.35.4-py3-none-any.whl", hash = "sha256:c21c9cede36c9753eeade68ba7d523529f228a403463376cf821eaae2b650f1b", size = 6005095, upload-time = "2025-10-29T06:57:37.598Z" },
 ]
 
 [[package]]
