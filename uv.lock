@@ -1372,7 +1372,7 @@ wheels = [
 
 [[package]]
 name = "smallgraphlib"
-version = "1.3.0"
+version = "1.4.0"
 source = { editable = "../smallgraphlib" }
 
 [package.metadata]
