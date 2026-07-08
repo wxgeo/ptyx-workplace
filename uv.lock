@@ -773,8 +773,6 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "myst-parser" },
-    { name = "pytest-profiling" },
-    { name = "pytest-xdist" },
     { name = "sphinx-autodoc-typehints" },
     { name = "sphinx-rtd-theme" },
     { name = "types-openpyxl" },
@@ -795,8 +793,6 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "myst-parser", specifier = ">=1.0.0,<2" },
-    { name = "pytest-profiling", specifier = ">=1.8.1,<2" },
-    { name = "pytest-xdist", specifier = ">=3.5.0,<4" },
     { name = "sphinx-autodoc-typehints", specifier = ">=1.18.3,<2" },
     { name = "sphinx-rtd-theme", specifier = ">=1.0.0,<2" },
     { name = "types-openpyxl" },
@@ -882,6 +878,8 @@ dev = [
     { name = "mypy" },
     { name = "myst-parser" },
     { name = "pytest" },
+    { name = "pytest-profiling" },
+    { name = "pytest-xdist" },
     { name = "python-semantic-release" },
     { name = "ruff" },
     { name = "rust-just" },
@@ -902,6 +900,8 @@ dev = [
     { name = "mypy", specifier = ">=1.18.2" },
     { name = "myst-parser", specifier = ">=1.0,<2" },
     { name = "pytest", specifier = ">=7.4.4" },
+    { name = "pytest-profiling", specifier = ">=1.8.1,<2" },
+    { name = "pytest-xdist", specifier = ">=3.5.0,<4" },
     { name = "python-semantic-release", specifier = ">=10.5.3" },
     { name = "ruff", specifier = ">=0.9.10" },
     { name = "rust-just", specifier = ">=1.43.0" },
