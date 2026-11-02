@@ -6,5 +6,5 @@ import "justfiles/release.just"
 import "justfiles/uv.just"
 import "justfiles/ui.just"
 
-default:
+list:
     just --list
